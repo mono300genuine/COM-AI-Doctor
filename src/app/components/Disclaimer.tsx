@@ -1,4 +1,9 @@
 "use client";
+import { useMutation } from "convex/react";
+import { AlertTriangle } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { api } from "../convex/_generated/api";
 import {
     AlertDialog,
     AlertDialogAction,
@@ -9,13 +14,8 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import { Button } from "@/components/ui/button";
-import { api } from "@/convex/_generated/api";
-import { useMutation } from "convex/react";
-import { AlertTriangle } from "lucide-react";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+} from "./ui/alert-dialog";
+import { Button } from "./ui/button";
 
 export function Disclaimer() {
   const router = useRouter();

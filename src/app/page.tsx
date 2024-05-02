@@ -1,12 +1,12 @@
 "use client";
-import { Disclaimer } from "@/components/Disclaimer";
-import Footer from "@/components/Footer";
-import HowitWorks from "@/components/HowitWorks";
-import { Button } from "@/components/ui/button";
 import { Brain } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedTextCharacter from "./components/AnimateTextWord";
+import { Disclaimer } from "./components/Disclaimer";
+import Footer from "./components/Footer";
+import HowitWorks from "./components/HowitWorks";
+import { Button } from "./components/ui/button";
 
 export default function Home() {
   return (

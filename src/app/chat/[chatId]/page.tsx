@@ -1,19 +1,19 @@
 "use client";
-import { EditDialog } from "@/components/editDialog";
-import { Input } from "@/components/ui/input";
-import { Id } from "@/convex/_generated/dataModel";
 import { useAction, useConvexAuth, useQuery } from "convex/react";
 import {
-    Bot,
-    Loader2,
-    SendHorizontal,
-    UserCircle2
+  Bot,
+  Loader2,
+  SendHorizontal,
+  UserCircle2
 } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState } from "react";
-import { api } from "../../../convex/_generated/api";
 import AnimateWord from "../../components/AnimateWord";
 import ChatHistory from "../../components/chatHistory";
+import { EditDialog } from "../../components/editDialog";
+import { Input } from "../../components/ui/input";
+import { api } from "../../convex/_generated/api";
+import { Id } from "../../convex/_generated/dataModel";
 
 const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
   const [message, setMessage] = useState("");
@@ -64,7 +64,7 @@ const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
     <>
       {entries?.length == 0 ? (
         <div className="flex w-full h-screen justify-center items-center gap-3 flex-col">
-          <AnimateWord text="MediMind will be with you shortly..." />
+          <AnimateWord text="Commune Doctor AI will be with you shortly..." />
           <Loader2 className="animate-spin h-10 w-10 text-primary" />
         </div>
       ) : (

@@ -1,5 +1,4 @@
 "use client";
-import { SignInButton } from "@clerk/clerk-react";
 import { useConvexAuth, useMutation, useQuery } from "convex/react";
 import { ArrowBigRight, History, Plus } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -37,9 +36,7 @@ const ChatHistory = ({ params }: any) => {
       {isLoading && <Spinner />}
       {!isAuthenticated && !isLoading && (
         <div className="h-screen w-72 border-r flex justify-center items-center">
-          <SignInButton mode="modal">
-            <Button>Sign In to view history</Button>
-          </SignInButton>
+          
         </div>
       )}
       {isAuthenticated && !isLoading && (

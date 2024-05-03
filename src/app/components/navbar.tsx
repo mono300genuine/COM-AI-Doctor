@@ -13,7 +13,7 @@ const Navbar = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   const router = useRouter();
   return (
-    <nav className="flex fixed w-full top-0 md:px-24 px-4 z-10 backdrop-blur-md border-b py-2 items-center justify-between">
+    <nav className="flex fixed w-full top-0 md:px-24 px-4 z-10 backdrop-blur-md border-b py-2 items-center justify-between bg-blue-300">
       <Link href="/">
         <Image
           src="/logo.gif"

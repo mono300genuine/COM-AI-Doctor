@@ -5,15 +5,15 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { api } from "../convex/_generated/api";
 import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
 } from "./ui/alert-dialog";
 import { Button } from "./ui/button";
 
@@ -52,7 +52,7 @@ export function Disclaimer() {
       ) : (
         <AlertDialog>
           <AlertDialogTrigger asChild>
-            <Button className="mt-5 text-primary-foreground" size={"lg"}>
+            <Button className="mt-5 text-primary-foreground border-2 bg-green-200" size={"lg"}>
               Get Started
             </Button>
           </AlertDialogTrigger>
@@ -66,7 +66,7 @@ export function Disclaimer() {
                   <AlertTriangle className="text-yellow-500" />
                 </section>
                 <AlertDialogDescription className="text-left">
-                 aaa
+                 Click continue button
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>

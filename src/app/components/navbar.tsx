@@ -1,5 +1,5 @@
 "use client";
-import { SignInButton, UserButton } from "@clerk/clerk-react";
+import { UserButton } from "@clerk/clerk-react";
 import { History } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,9 +27,7 @@ const Navbar = () => {
         {isLoading && <Spinner />}
         {!isAuthenticated && !isLoading && (
           <>
-            <SignInButton mode="modal">
-              <Button variant={"outline"}>Sign In</Button>
-            </SignInButton>
+            
           </>
         )}
         {isAuthenticated && !isLoading && (

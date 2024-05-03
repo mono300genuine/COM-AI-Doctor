@@ -14,7 +14,7 @@ export default function Home() {
       <main className="flex flex-col md:gap-0 md:mt-0 mt-20 gap-10 md:flex-row min-h-screen md:px-28 px-4 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100 via-white to-white items-center justify-center md:justify-between">
         <div className="flex flex-col md:items-start md:justify-start items-center justify-center">
           <section className="flex items-center gap-1">
-            <AnimatedTextCharacter text="MediMind" />
+            <AnimatedTextCharacter text="COM DOCTOR" />
             <span className="mb-5 font-semibold text-destructive uppercase text-sm rounded-lg">
               Alpha
             </span>
@@ -37,9 +37,9 @@ export default function Home() {
           </section>
         </div>
         <Image
-          src="/medimind-banner.jpeg"
+          src="/com-doctor-banner.jpeg"
           alt="hero banner"
-          className="md:w-2/5 shadow-lg shadow-primary/20 w-full rounded-sm"
+          className="md:w-3/5 shadow-lg shadow-primary/20 w-full rounded-sm"
           width={1024}
           height={1024}
         />

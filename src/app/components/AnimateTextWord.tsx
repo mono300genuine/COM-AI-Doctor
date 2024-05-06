@@ -46,7 +46,7 @@ const AnimatedTextCharacter = ({ text }: { text: string }) => {
     >
       {letters.map((letter, index) => (
         <motion.span
-          className="text-primary font-bold text-6xl tracking-wideunderline underline-offset-3 decoration-8 decoration-blue-500 text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-sky-600"
+          className="text-primary font-bold text-6xl tracking-wideunderline underline-offset-3 decoration-8 decoration-blue-500 text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-pink-600"
           variants={child}
           key={index}
         >

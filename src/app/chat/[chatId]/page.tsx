@@ -64,7 +64,7 @@ const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
     <>
       {entries?.length == 0 ? (
         <div className="flex w-full h-screen justify-center items-center gap-3 flex-col">
-          <AnimateWord text="Commune Doctor AI will be with you shortly..." />
+          <AnimateWord text="Will be with you shortly..." />
           <Loader2 className="animate-spin h-10 w-10 text-primary" />
         </div>
       ) : (
@@ -75,13 +75,9 @@ const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
 
           <div className="lg:w-1/2 w-full relative mt-20 flex flex-col justify-center items-center">
             <div className="flex flex-col  items-center overflow-y-auto scrollbar-hide justify-center gap-5">
-              <Image
-                src="/chat-img.png"
-                className="w-64 mt-10"
-                width={500}
-                height={500}
-                alt="chat image"
-              />
+              <div className="flex">
+                <img src="/1.jpg" alt="" className="h-64 rounded-full ring-2"/>
+              </div>
               <div className="flex flex-col gap-1 mb-24">
                 <div className="flex flex-col justify-center items-center gap-1 mb-4">
                   <span className="text-primary text-center text-base">

@@ -2,12 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useConvexAuth } from "convex/react";
-
 const Navbar = () => {
-  const { isAuthenticated, isLoading } = useConvexAuth();
   return (
-    <nav className="flex fixed w-full top-0 md:px-24 px-4 z-10 backdrop-blur-3xl  border-green-100 py-2 items-center justify-between">
+    <nav className="flex fixed w-4/5 top-0 md:px-24 px-4 z-10 backdrop-blur-3xl border py-4 items-center justify-between rounded-xl">
       <Link href="/">
         <Image
           src="/logo.gif"
@@ -17,14 +14,7 @@ const Navbar = () => {
           height={500}
         />
       </Link>
-      <h1 className="font-serif text-center text-5xl font-bold text-white text-secondary-foreground"><span className="underline underline-offset-3 decoration-8 decoration-blue-500 text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-sky-600">COMMUNE DOCTOR AI</span></h1>
-      <ul className="flex items-center gap-x-3">
-        {/* {isLoading && <Spinner />} */}
-        {!isAuthenticated && !isLoading && (
-          <>
-          </>
-        )}
-      </ul>
+      <h1 className="font-serif text-center items-center text-2xl font-bold text-white text-secondary-foreground">COMMUNE DOCTOR AI</h1>
     </nav>
   );
 };

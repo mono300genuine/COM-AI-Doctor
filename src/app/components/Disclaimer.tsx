@@ -51,33 +51,9 @@ export function Disclaimer() {
         </AlertDialog>
       ) : (
         <AlertDialog>
-          <AlertDialogTrigger asChild>
-            <Button className="mt-5 text-primary-foreground border-2 bg-green-200" size={"lg"}>
+            <Button className="mt-5 text-primary-foreground border bg-gray-600 hover:bg-gray-900" size={"lg"} onClick={handleStart}>
               Get Started
             </Button>
-          </AlertDialogTrigger>
-          <div className="mx-5">
-            <AlertDialogContent className="bg-secondary rounded-md w-5/6">
-              <AlertDialogHeader>
-                <section className="flex items-center gap-1">
-                  <AlertDialogTitle className="text-yellow-500">
-                    Disclaimer
-                  </AlertDialogTitle>
-                  <AlertTriangle className="text-yellow-500" />
-                </section>
-                <AlertDialogDescription className="text-left">
-                 Click continue button
-                </AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-
-                <AlertDialogAction onClick={handleStart}>
-                  Continue
-                </AlertDialogAction>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </div>
         </AlertDialog>
       )}
     </>

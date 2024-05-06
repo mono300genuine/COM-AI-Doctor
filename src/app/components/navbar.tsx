@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { useConvexAuth } from "convex/react";
-import { Spinner } from "./spinner";
 
 const Navbar = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
@@ -20,7 +19,7 @@ const Navbar = () => {
       </Link>
       <h1 className="font-serif text-center text-5xl font-bold text-white text-secondary-foreground"><span className="underline underline-offset-3 decoration-8 decoration-blue-500 text-transparent bg-clip-text bg-gradient-to-r to-emerald-500 from-sky-600">COMMUNE DOCTOR AI</span></h1>
       <ul className="flex items-center gap-x-3">
-        {isLoading && <Spinner />}
+        {/* {isLoading && <Spinner />} */}
         {!isAuthenticated && !isLoading && (
           <>
           </>

@@ -26,13 +26,15 @@ export default function Home() {
           aria-label="Map Image" 
           className="flex flex-col md:items-start md:justify-start items-center justify-center">
           <section className="flex items-center gap-1">
-            <AnimatedTextCharacter text="COM DOCTOR" />
-            <span className="mb-5 font-semibold text-destructive uppercase text-sm rounded-lg">
-              Alpha
-            </span>
+            <AnimatedTextCharacter 
+              text="COM DOCTOR"
+            />
           </section>
-          <p className="md:text-base text-sm text-secondary-foreground text-center opacity-75">
-            Experience instant symptom analysis with our advanced AI doctor.
+          <p className="md:text-base text-sm text-secondary-foreground text-left opacity-75">
+          Get ready to witness the future of healthcare! Introducing our cutting-edge AI doctor,
+          <br/>your personal health companion.
+          <br/>Say goodbye to the waiting room and hello to instant symptom analysis. 
+          <br/>Get ready to experience healthcare like never before!
           </p>
           <section className="flex space-x-2">
             <Disclaimer />
@@ -48,13 +50,6 @@ export default function Home() {
             </Link>
           </section>
         </div>
-        {/* <Image
-          src="/com-doctor-banner.jpeg"
-          alt="hero banner"
-          className="md:w-3/5 shadow-lg shadow-primary/20 w-full rounded-sm"
-          width={1024}
-          height={1024}
-        /> */}
       </main>
       <div className="md:px-24 px-4">
         <HowitWorks />

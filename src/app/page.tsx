@@ -20,7 +20,6 @@ export default function Home() {
         }}
         className="flex flex-col md:gap-0 md:mt-0 mt-20 gap-10 md:flex-row min-h-screen md:px-28 px-4 items-center justify-center md:justify-between">
         <div
-
           role="img"
           aria-label="Map Image"
           className="flex flex-col md:items-start md:justify-start items-center justify-center">

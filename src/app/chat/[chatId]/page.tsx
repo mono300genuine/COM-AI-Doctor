@@ -117,7 +117,7 @@ const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
                           </div>
                         )}
                         {entry.response && (
-                          <div className="bg-secondary p-2 space-y-2 rounded-md">
+                          <div className="bg-white p-2 space-y-2 rounded-md">
                             <section className="flex items-center gap-1">
                               {" "}
                               <h2 className="font-semibold">Com Doctor AI</h2>
@@ -133,7 +133,7 @@ const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
                     );
                   })}
                   {isLoading && (
-                    <div className="flex bg-secondary rounded-md p-2 flex-col">
+                    <div className="flex bg-white rounded-md p-2 flex-col">
                       <section className="flex items-center gap-1">
                         {" "}
                         <h2 className="font-semibold">Com Doctor AI</h2>
@@ -153,13 +153,12 @@ const Chat = (props: { params: { chatId: Id<"consultations"> } }) => {
               onSubmit={handleMsgSubmit}
               className="flex fixed z-10 bottom-4 px-4 items-center justify-center w-full"
             >
-              {/* <Mic className="mr-2 h-12 w-12 text-gray-400 hover:bg-primary/10 rounded-full transition-all p-2" /> */}
               <Input
                 disabled={isLoading}
                 placeholder="How are you feeling?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="lg:w-1/2 shadow-md shadow-primary/20 bg-secondary"
+                className="lg:w-1/2 shadow-md shadow-primary/20 bg-white"
               />
               <button disabled={isLoading}>
                 <SendHorizontal
